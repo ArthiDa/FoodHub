@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(229, 235, 246);
+}
+.carousel-inner{
+    height: 720px !important;
+}
+.img-card{
+    transition: transform 1s ease-in-out;
+}
+.img-card:hover{
+    transform: rotate(360deg) scale(0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-inner{
+        height: 200px !important;
+    }
+    .navbar-brand{
+        width: 50% !important;
+    }
+}
