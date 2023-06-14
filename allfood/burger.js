@@ -1,9 +1,8 @@
-const limitedBurgers = () => {
+const Burgers = () => {
     fetch('http://127.0.0.1:5500/burgers.json')
         .then(res => res.json())
         .then(data => {
-            const burgers = data.filter(burger => burger.id <= 3)
-            for (burger of burgers) {
+            for (burger of data) {
                 // console.log(burger.images);
                 let div = document.createElement('div')
                 div.className = 'col';
@@ -18,12 +17,10 @@ const limitedBurgers = () => {
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
-                    
                 `
                 document.getElementById('burgers').appendChild(div);
             }
         })
 
 }
-
-limitedBurgers();
+Burgers();

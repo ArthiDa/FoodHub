@@ -1,29 +1,25 @@
-const limitedBurgers = () => {
-    fetch('http://127.0.0.1:5500/burgers.json')
+const Pizza = () => {
+    fetch('http://127.0.0.1:5500/pizzas.json')
         .then(res => res.json())
         .then(data => {
-            const burgers = data.filter(burger => burger.id <= 3)
-            for (burger of burgers) {
-                // console.log(burger.images);
+            for (pizza of data) {
                 let div = document.createElement('div')
                 div.className = 'col';
                 div.innerHTML = 
                 `
                     <div class="card h-100 shadow">
-                        <img src=${burger.images[1].lg} class="card-img-top img-card" alt=${burger.images[0].sm}>
+                        <img src=${pizza.img} class="card-img-top img-card" alt="pizza">
                         <div class="card-body">
-                            <h5 class="card-title">${burger.name}</h5>
+                            <h5 class="card-title">${pizza.name}</h5>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
-                    
                 `
-                document.getElementById('burgers').appendChild(div);
+                document.getElementById('pizzas').appendChild(div);
             }
         })
 
 }
-
-limitedBurgers();
+Pizza();
