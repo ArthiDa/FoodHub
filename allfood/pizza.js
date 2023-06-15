@@ -1,5 +1,5 @@
 const Pizza = () => {
-    fetch('http://127.0.0.1:5500/pizzas.json')
+    fetch('/pizzas.json')
         .then(res => res.json())
         .then(data => {
             for (pizza of data) {

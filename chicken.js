@@ -1,5 +1,5 @@
 const limitedChicken = () => {
-    fetch('http://127.0.0.1:5500/chicken.json')
+    fetch('/chicken.json')
         .then(res => res.json())
         .then(data => {
             let count = 0;

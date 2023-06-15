@@ -1,5 +1,5 @@
 const Burgers = () => {
-    fetch('http://127.0.0.1:5500/burgers.json')
+    fetch('/burgers.json')
         .then(res => res.json())
         .then(data => {
             for (burger of data) {

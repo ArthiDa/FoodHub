@@ -1,5 +1,5 @@
 const Beef = () => {
-    fetch('http://127.0.0.1:5500/beef.json')
+    fetch('/beef.json')
         .then(res => res.json())
         .then(data => {
             for (beef of data) {

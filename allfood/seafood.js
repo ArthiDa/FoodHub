@@ -1,5 +1,5 @@
 const Seafood = () => {
-    fetch('http://127.0.0.1:5500/seafood.json')
+    fetch('/seafood.json')
         .then(res => res.json())
         .then(data => {
             for (seafood of data) {
