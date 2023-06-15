@@ -1,5 +1,5 @@
 const Beef = () => {
-    fetch('https://648ab7a5b23b9c503377b5d1--rococo-duckanoo-32f1e7.netlify.app/beef.json')
+    fetch('/beef.json')
         .then(res => res.json())
         .then(data => {
             for (beef of data) {
