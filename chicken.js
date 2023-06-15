@@ -1,5 +1,5 @@
 const limitedChicken = () => {
-    fetch('./chicken.json')
+    fetch('https://arthida.github.io/FoodHub/chicken.json')
         .then(res => res.json())
         .then(data => {
             let count = 0;

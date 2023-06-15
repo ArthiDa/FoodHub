@@ -1,5 +1,5 @@
 const Beef = () => {
-    fetch('./beef.json')
+    fetch('https://arthida.github.io/FoodHub/beef.json')
         .then(res => res.json())
         .then(data => {
             for (beef of data) {

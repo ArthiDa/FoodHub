@@ -1,5 +1,5 @@
 const Pizza = () => {
-    fetch('./pizzas.json')
+    fetch('https://arthida.github.io/FoodHub/pizzas.json')
         .then(res => res.json())
         .then(data => {
             for (pizza of data) {

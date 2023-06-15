@@ -1,5 +1,5 @@
 const Dessert = () => {
-    fetch('./dessert.json')
+    fetch('https://arthida.github.io/FoodHub/dessert.json')
         .then(res => res.json())
         .then(data => {
             let count = 0;

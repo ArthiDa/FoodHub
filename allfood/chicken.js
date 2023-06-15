@@ -1,5 +1,5 @@
 const Chicken = () => {
-    fetch('./chicken.json')
+    fetch('https://arthida.github.io/FoodHub/chicken.json')
         .then(res => res.json())
         .then(data => {
             console.log(data);

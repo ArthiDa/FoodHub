@@ -1,5 +1,5 @@
 const Vegan = () => {
-    fetch('./vegan.json')
+    fetch('https://arthida.github.io/FoodHub/vegan.json')
         .then(res => res.json())
         .then(data => {
             for (vegan of data) {

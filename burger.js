@@ -1,5 +1,5 @@
 const limitedBurgers = () => {
-    fetch('./burgers.json')
+    fetch('https://arthida.github.io/FoodHub/burgers.json')
         .then(res => res.json())
         .then(data => {
             const burgers = data.filter(burger => burger.id <= 3)

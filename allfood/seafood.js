@@ -1,5 +1,5 @@
 const Seafood = () => {
-    fetch('./seafood.json')
+    fetch('https://arthida.github.io/FoodHub/seafood.json')
         .then(res => res.json())
         .then(data => {
             for (seafood of data) {

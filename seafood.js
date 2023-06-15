@@ -1,5 +1,5 @@
 const limitedseafood = () => {
-    fetch('./seafood.json')
+    fetch('https://arthida.github.io/FoodHub/seafood.json')
         .then(res => res.json())
         .then(data => {
             let count = 0;
