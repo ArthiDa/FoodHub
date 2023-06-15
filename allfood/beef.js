@@ -1,5 +1,5 @@
 const Beef = () => {
-    fetch('/beef.json')
+    fetch('./beef.json')
         .then(res => res.json())
         .then(data => {
             for (beef of data) {

@@ -1,5 +1,5 @@
 const limitedpizza = () => {
-    fetch('/pizzas.json')
+    fetch('./pizzas.json')
         .then(res => res.json())
         .then(data => {
             const pizzas = data.filter(pizza => pizza.id <= 3)

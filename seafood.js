@@ -1,5 +1,5 @@
 const limitedseafood = () => {
-    fetch('/seafood.json')
+    fetch('./seafood.json')
         .then(res => res.json())
         .then(data => {
             let count = 0;

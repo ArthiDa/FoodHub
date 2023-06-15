@@ -1,5 +1,5 @@
 const Chicken = () => {
-    fetch('/chicken.json')
+    fetch('./chicken.json')
         .then(res => res.json())
         .then(data => {
             console.log(data);

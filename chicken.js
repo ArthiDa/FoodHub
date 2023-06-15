@@ -1,5 +1,5 @@
 const limitedChicken = () => {
-    fetch('/chicken.json')
+    fetch('./chicken.json')
         .then(res => res.json())
         .then(data => {
             let count = 0;

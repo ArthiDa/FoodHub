@@ -1,5 +1,5 @@
 const limitedvegan = () => {
-    fetch('/vegan.json')
+    fetch('./vegan.json')
         .then(res => res.json())
         .then(data => {
             const vegans = data.filter(vegan => vegan.id <= 3)

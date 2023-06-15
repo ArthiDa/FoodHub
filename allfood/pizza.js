@@ -1,5 +1,5 @@
 const Pizza = () => {
-    fetch('/pizzas.json')
+    fetch('./pizzas.json')
         .then(res => res.json())
         .then(data => {
             for (pizza of data) {

@@ -1,5 +1,5 @@
 const Dessert = () => {
-    fetch('/dessert.json')
+    fetch('./dessert.json')
         .then(res => res.json())
         .then(data => {
             let count = 0;

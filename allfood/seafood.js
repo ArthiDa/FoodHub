@@ -1,5 +1,5 @@
 const Seafood = () => {
-    fetch('/seafood.json')
+    fetch('./seafood.json')
         .then(res => res.json())
         .then(data => {
             for (seafood of data) {

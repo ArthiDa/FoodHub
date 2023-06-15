@@ -1,5 +1,5 @@
 const Vegan = () => {
-    fetch('/vegan.json')
+    fetch('./vegan.json')
         .then(res => res.json())
         .then(data => {
             for (vegan of data) {
