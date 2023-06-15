@@ -1,5 +1,5 @@
 const Vegan = () => {
-    fetch('/vegan.json')
+    fetch('https://648ab7a5b23b9c503377b5d1--rococo-duckanoo-32f1e7.netlify.app/vegan.json')
         .then(res => res.json())
         .then(data => {
             for (vegan of data) {
